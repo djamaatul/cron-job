@@ -3,8 +3,7 @@ name:
 on:
   schedule:
     - cron: "*/5 * * * *"
-  pull_request:
-    types: [closed, assigned, opened, reopened]
+  push:
     branches: ["main"]
 jobs:
   cron:
