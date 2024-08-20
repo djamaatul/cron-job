@@ -5,6 +5,7 @@ on:
     - cron: "*/5 * * * *"
   pull_request:
     types: [closed, assigned, opened, reopened]
+    branches: ["main"]
 jobs:
   cron:
     runs-on: ubuntu-latest
