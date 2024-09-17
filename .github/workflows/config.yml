@@ -13,4 +13,4 @@ jobs:
         with:
           node-version: '14.x'
       - name: run
-        run: node index.js
+        run: node ./index.js
