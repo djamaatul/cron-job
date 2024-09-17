@@ -2,14 +2,15 @@ name:
   Test Cron Job
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/30 * * * *"
   push:
     branches: ["main"]
 jobs:
   cron:
     runs-on: ubuntu-latest
     steps:
-      - name: step-1
-        run: cd ../../
-      - name: step-2
-        run: ls -a
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+      - name: run
+        run: node index.js
