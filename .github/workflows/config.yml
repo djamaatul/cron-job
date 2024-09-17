@@ -9,5 +9,7 @@ jobs:
   cron:
     runs-on: ubuntu-latest
     steps:
-      - name: Hello World
+      - name: step-1
+        run: cd ../../
+      - name: step-2
         run: ls -a
