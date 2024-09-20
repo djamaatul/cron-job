@@ -2,7 +2,7 @@ name:
   Test Cron Job
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "* * * * *"
   push:
     branches: ["main"]
 jobs:
@@ -13,4 +13,4 @@ jobs:
         with:
           node-version: '14.x'
       - name: run
-        run: node -e "console.log(\"Hello world\")"
+        run: npm run start
