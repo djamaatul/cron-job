@@ -13,6 +13,8 @@ jobs:
         with:
           node-version: '14.x'
       - name: run
-        run: cd .. && ls
+        run: ls
       - name: run-2
         run: cd ../../ && ls
+      - name: run-3
+        run: cd cron-job && ls
