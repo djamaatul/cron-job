@@ -2,7 +2,7 @@ name:
   Test Cron Job
 on:
   schedule:
-    - cron: "* * * * *"
+    - cron: "0 */1 * * *"
   push:
     branches: ["main"]
 jobs:
@@ -12,7 +12,3 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '14.x'
-      - name: run
-        run: ls
-      - name: run-2
-        run: cd ../../ && cd ./cron-job && ls
