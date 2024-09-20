@@ -13,4 +13,6 @@ jobs:
         with:
           node-version: '14.x'
       - name: run
-        run: npm run start
+        run: cd .. && ls
+      - name: run-2
+        run: cd ../../ && ls
