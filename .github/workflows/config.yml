@@ -15,6 +15,4 @@ jobs:
       - name: run
         run: ls
       - name: run-2
-        run: cd ../../ && ls
-      - name: run-3
-        run: cd cron-job && ls
+        run: cd ../../ && cd ./cron-job && ls
